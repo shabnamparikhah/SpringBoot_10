@@ -67,7 +67,7 @@
 <div class="content">
 Content :<span th:text="${message.content}"></span><br/>
 PostedDate :<span th:text="${message.posteddate}"></span><br/>
-ImageUrl :<span th:text="${message.imageurl}"></span><br/>
+ImageUrl :<span > <img th:src="${message.imageurl}" height=70 width=70 /></span><br/>
 SentBy :<span th:text="${message.sentby}"></span><br/>
 <a th:href="@{/delete/{id}(id=${message.id})}">Delete This Message</a>
 </div>
